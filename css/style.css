@@ -27,3 +27,9 @@ body {
   color: var(--white-color);
   background-color: var(--bg-color);
 }
+
+/* ===== HEADER ====== */
+
+header {
+  background-color: var(--navbar-color);
+}
