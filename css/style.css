@@ -3,7 +3,7 @@
 :root {
   --bg-color: #0c1317;
   --main-color: #222e35;
-  --side-panel: #0c1317;
+  --side-panel: #111b21;
   --navbar-color: #202c33;
   --searchbar-color: #202c33;
   --button-bg-color: #00a884;
@@ -26,4 +26,66 @@ body {
   font-family: var(--main-font-family);
   color: var(--white-color);
   background-color: var(--bg-color);
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* ===== HEADER ====== */
+
+header {
+  background-color: var(--navbar-color);
+  padding: 0 1.2rem;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.sep-bar-navbar {
+  margin: 1.6rem 0.8rem 0.8rem 0.8rem;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 32px;
+  height: 32px;
+}
+
+/* ======= CHAT PANEL ========= */
+
+.chat-panel {
+  min-width: 510px;
+  background-color: var(--side-panel);
+  height: 100vh;
+}
+
+.chat-panel-header,
+.chat-panel-header-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-panel-header {
+  padding: 2.5rem;
+}
+
+.chat-panel-header-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.chat-panel-header-options-icons {
+  padding: 0.8rem;
 }
