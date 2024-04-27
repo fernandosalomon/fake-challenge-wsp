@@ -33,3 +33,7 @@ body {
 header {
   background-color: var(--navbar-color);
 }
+
+.icon {
+  padding: 2rem;
+}
