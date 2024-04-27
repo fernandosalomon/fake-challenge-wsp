@@ -89,3 +89,44 @@ nav {
 .chat-panel-header-options-icons {
   padding: 0.8rem;
 }
+
+.chat-panel-searchbar {
+  padding-left: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.chat-panel-searchbar-filter-button {
+  margin: 0 0.8rem;
+}
+
+.searchbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 100%;
+  gap: 1rem;
+  background-color: var(--searchbar-color);
+  padding: 2rem;
+  border-radius: 14px;
+}
+
+.searchbar {
+  height: 80%;
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+.searchbar:focus-visible,
+.searchbar:focus {
+  border: none;
+  outline: none;
+}
+
+.form-wrapper {
+  width: 100%;
+}
