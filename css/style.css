@@ -130,3 +130,62 @@ nav {
 .form-wrapper {
   width: 100%;
 }
+
+.chat-panel-main {
+  margin-top: 0.8rem;
+}
+
+.chat-panel-main-card {
+  display: flex;
+  padding: 0.8rem 2.5rem;
+  width: 100%;
+}
+
+.chat-avatar {
+  width: 13%;
+  margin-right: 0.8rem;
+}
+
+.chat-info {
+  border-bottom: 1px solid #222d34;
+  width: 100%;
+}
+
+.chat-avatar img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.chat-shorttext {
+  display: flex;
+  align-items: center;
+  color: #8696a0;
+}
+
+.chat-username {
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+.chat-shorttext {
+  font-size: 1.5rem;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+}
+
+.message-status-indicator {
+  width: 4%;
+  margin: 0.3rem;
+}
+
+.message-status-indicator img {
+  width: 100%;
+}
+
+.chat-time {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #8696a0;
+}
