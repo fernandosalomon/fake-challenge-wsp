@@ -43,10 +43,12 @@ header {
 
 nav {
   height: 100%;
+  max-width: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--navbar-color);
 }
 
 .icon {
@@ -67,9 +69,9 @@ nav {
 }
 
 .chat-panel {
-  min-width: 510px;
-  background-color: var(--side-panel);
+  background-color: inherit;
   height: 100vh;
+  width: 100%;
 }
 
 .chat-panel-header,
