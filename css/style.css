@@ -8,9 +8,13 @@
   --navbar-color: #202c33;
   --searchbar-color: #202c33;
   --button-bg-color: #00a884;
+  --button-hover-bg-color: #06cf9c;
   --notification-color: #63cb77;
   --main-font-family: "Segoe UI", "Space Grotesk", sans-serif;
   --white-color: rgb(255, 255, 255);
+  --text-primary-color: rgba(233, 237, 239, 0.88);
+  --text-secondary-color: #8696a0;
+  --text-secondary-light-color: #54656f;
 }
 
 * {
@@ -216,4 +220,76 @@ nav {
 
 .card-wrapper:hover > .chat-info > .message-info-wrapper > .chat-arrow {
   display: block;
+}
+
+/* ======== MAIN ========= */
+
+.main-wrapper {
+  display: flex;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 1060px;
+  background-color: var(--main-color);
+  height: 100vh;
+}
+
+.chat-box-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-box-intro-img {
+  width: 30%;
+}
+
+.chat-box-intro-img img {
+  width: 100%;
+}
+
+.chat-box-intro-txt {
+  text-align: center;
+}
+
+.chat-box-intro-txt h2 {
+  margin: 3.8rem;
+  font-size: 4rem;
+  font-weight: 100;
+  color: var(--text-primary-color);
+}
+
+.chat-box-intro-txt p {
+  margin: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: var(--text-secondary-color);
+}
+
+.chat-box-intro-btn button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 24px;
+  background-color: var(--button-bg-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.chat-box-intro-btn button:hover {
+  background-color: var(--button-hover-bg-color);
+  cursor: pointer;
+  transition: 0.18s;
+  transition-timing-function: ease;
+}
+
+.chat-box-intro-footer {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--text-secondary-light-color);
 }
