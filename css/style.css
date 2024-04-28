@@ -27,6 +27,11 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font-family: var(--main-font-family);
   color: var(--white-color);
@@ -154,8 +159,8 @@ nav {
 }
 
 .chat-avatar {
-  width: 13%;
-  margin-right: 0.8rem;
+  width: 19%;
+  margin: auto 0 0.8rem auto;
   padding: 0.8rem;
 }
 
@@ -180,12 +185,12 @@ nav {
 }
 
 .chat-username {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
 .chat-shorttext {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 100;
   display: flex;
   align-items: center;
