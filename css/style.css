@@ -73,7 +73,7 @@ nav {
 .chat-sidebar {
   min-width: 510px;
   background-color: var(--side-panel);
-  height: 100vh;
+  height: 95vh;
 }
 
 .chat-sidebar-header,
@@ -231,7 +231,8 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  min-width: 1060px;
+  /* min-width: 1060px; */
+  width: 100%;
   background-color: var(--main-color);
   height: 95vh;
 }
