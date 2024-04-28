@@ -33,7 +33,9 @@ body {
   background-color: var(--bg-color);
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 95vh;
+  width: 95vw;
+  margin: auto;
 }
 
 header {
@@ -70,7 +72,7 @@ nav {
 
 .chat-panel {
   background-color: inherit;
-  height: 100vh;
+  height: 95vh;
   width: 100%;
 }
 
@@ -231,7 +233,7 @@ nav {
   justify-content: space-around;
   min-width: 1060px;
   background-color: var(--main-color);
-  height: 100vh;
+  height: 95vh;
 }
 
 .chat-box-main {
