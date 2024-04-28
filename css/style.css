@@ -78,7 +78,6 @@ nav {
 .chat-panel {
   background-color: inherit;
   height: 95vh;
-  width: 100%;
 }
 
 .chat-panel-header,
@@ -141,19 +140,21 @@ nav {
   width: 100%;
 }
 
-.chat-panel-main {
-  margin-top: 0.8rem;
+.chat-sidebar {
+  width: 413px;
 }
 
-.chat-panel-main-card {
-  margin: 0 2.5rem;
+.chat-sidebar-main {
+  margin: 0.8rem 0;
 }
 
 .card-wrapper {
   display: flex;
+  padding: 0 0.5rem;
 }
 
-.card-wrapper:hover {
+.card-wrapper:hover,
+.active {
   background-color: var(--searchbar-color);
   cursor: pointer;
 }
