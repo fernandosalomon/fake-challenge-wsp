@@ -70,38 +70,38 @@ nav {
   height: 32px;
 }
 
-.chat-panel {
-  background-color: inherit;
-  height: 95vh;
-  width: 100%;
+.chat-sidebar {
+  min-width: 510px;
+  background-color: var(--side-panel);
+  height: 100vh;
 }
 
-.chat-panel-header,
-.chat-panel-header-options {
+.chat-sidebar-header,
+.chat-sidebar-header-options {
   display: flex;
   justify-content: space-between;
 }
 
-.chat-panel-header {
+.chat-sidebar-header {
   padding: 2.5rem;
 }
 
-.chat-panel-header-title {
+.chat-sidebar-header-title {
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-.chat-panel-header-options-icons {
+.chat-sidebar-header-options-icons {
   padding: 0.8rem;
 }
 
-.chat-panel-searchbar {
+.chat-sidebar-searchbar {
   padding-left: 1.2rem;
   display: flex;
   align-items: center;
 }
 
-.chat-panel-searchbar-filter-button {
+.chat-sidebar-searchbar-filter-button {
   margin: 0 0.8rem;
 }
 
@@ -136,11 +136,11 @@ nav {
   width: 100%;
 }
 
-.chat-panel-main {
+.chat-sidebar-main {
   margin-top: 0.8rem;
 }
 
-.chat-panel-main-card {
+.chat-sidebar-main-card {
   margin: 0 2.5rem;
 }
 
