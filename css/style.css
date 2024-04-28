@@ -76,7 +76,7 @@ nav {
 }
 
 .chat-sidebar {
-  min-width: 510px;
+  min-width: 428px;
   background-color: var(--side-panel);
   height: 95vh;
 }
@@ -88,7 +88,7 @@ nav {
 }
 
 .chat-sidebar-header {
-  padding: 2.5rem;
+  padding: 1rem 2rem 1rem 2.5rem;
 }
 
 .chat-sidebar-header-title {
@@ -118,7 +118,7 @@ nav {
   width: 100%;
   gap: 1rem;
   background-color: var(--searchbar-color);
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-radius: 14px;
 }
 
@@ -129,6 +129,10 @@ nav {
   border: none;
   color: var(--white-color);
   font-size: 1.5rem;
+}
+
+.search-button {
+  padding-top: 0.2rem;
 }
 
 .searchbar:focus-visible,
