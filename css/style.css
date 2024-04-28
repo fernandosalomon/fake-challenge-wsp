@@ -203,8 +203,8 @@ nav {
 }
 
 .message-status-indicator {
-  width: 8%;
-  margin: 0.4rem;
+  width: 9%;
+  margin-top: 0.5rem;
 }
 
 .message-status-indicator img {
@@ -247,11 +247,26 @@ nav {
   height: 95vh;
 }
 
-.chat-box-main-no-bg {
+.chat-box-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 1060px;
+  background-color: var(--main-color);
+  height: 95vh;
+}
+
+.chat-box-intro-header {
+  min-width: 66px;
+}
+
+.chat-box-intro-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .chat-box-intro-img {
@@ -298,9 +313,13 @@ nav {
 
 .chat-box-intro-footer {
   display: flex;
+  justify-content: center;
   gap: 0.5rem;
   font-size: 1.4rem;
   color: var(--text-secondary-light-color);
+  min-width: 20px;
+  margin-bottom: 4.5rem;
+  width: 100%;
 }
 
 .chat-box-header {
