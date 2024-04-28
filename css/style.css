@@ -324,3 +324,58 @@ nav {
   font-size: 1.4rem;
   color: var(--text-secondary-color);
 }
+
+.chat-box-input-main-wrapper,
+.chat-box-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.chat-box-input-main-wrapper {
+  width: 100%;
+  justify-content: space-around;
+  background-color: var(--navbar-color);
+  gap: 2rem;
+  padding: 0.8rem 1.6rem;
+}
+
+.chat-box-input-wrapper {
+  flex-grow: 1;
+  background-color: #2a3942;
+  padding: 1.2rem 0.9rem;
+  border-radius: 14px;
+}
+
+.chat-box-input-wrapper form,
+.chat-box-input {
+  width: 100%;
+}
+
+.chat-box-input {
+  background-color: inherit;
+  border: none;
+  color: rgb(209, 215, 219);
+  font-size: 1.5rem;
+}
+
+.chat-box-input-emojis-icon {
+  padding-right: 1rem;
+}
+
+.chat-box-input-moreoptions-icon,
+.chat-box-input-audio-icon {
+  margin: 0.8rem;
+}
+
+.chat-box-input:focus-visible {
+  outline: none;
+}
+
+.chat-box-main {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/chat-bg.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  opacity: 0.5;
+}
