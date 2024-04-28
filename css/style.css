@@ -36,8 +36,6 @@ body {
   height: 100vh;
 }
 
-/* ===== HEADER ====== */
-
 header {
   background-color: var(--navbar-color);
   padding: 0 1.2rem;
@@ -66,4 +64,156 @@ nav {
   object-fit: cover;
   width: 32px;
   height: 32px;
+}
+
+.chat-panel {
+  min-width: 510px;
+  background-color: var(--side-panel);
+  height: 100vh;
+}
+
+.chat-panel-header,
+.chat-panel-header-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-panel-header {
+  padding: 2.5rem;
+}
+
+.chat-panel-header-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.chat-panel-header-options-icons {
+  padding: 0.8rem;
+}
+
+.chat-panel-searchbar {
+  padding-left: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.chat-panel-searchbar-filter-button {
+  margin: 0 0.8rem;
+}
+
+.searchbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 100%;
+  gap: 1rem;
+  background-color: var(--searchbar-color);
+  padding: 2rem;
+  border-radius: 14px;
+}
+
+.searchbar {
+  height: 80%;
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+.searchbar:focus-visible,
+.searchbar:focus {
+  border: none;
+  outline: none;
+}
+
+.form-wrapper {
+  width: 100%;
+}
+
+.chat-panel-main {
+  margin-top: 0.8rem;
+}
+
+.chat-panel-main-card {
+  margin: 0 2.5rem;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.card-wrapper:hover {
+  background-color: var(--searchbar-color);
+  cursor: pointer;
+}
+
+.chat-avatar {
+  width: 13%;
+  margin-right: 0.8rem;
+  padding: 0.8rem;
+}
+
+.chat-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #222d34;
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.chat-avatar img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.chat-shorttext {
+  display: flex;
+  align-items: center;
+  color: #8696a0;
+}
+
+.chat-username {
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+.chat-shorttext {
+  font-size: 1.3rem;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+}
+
+.message-status-indicator {
+  width: 8%;
+  margin: 0.4rem;
+}
+
+.message-status-indicator img {
+  width: 100%;
+}
+
+.chat-time {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #8696a0;
+  text-align: center;
+}
+
+.message-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-arrow {
+  display: none;
+}
+
+.card-wrapper:hover > .chat-info > .message-info-wrapper > .chat-arrow {
+  display: block;
 }
