@@ -23,9 +23,9 @@
   <body>
     <header>
       <nav>
-        <div class="chat-panel">
+        <div class="navbar__chat">
           <!-- Message icon -->
-          <div class="icon active-icon">
+          <div class="navbar__icon navbar__icon--active">
             <svg
               viewBox="0 0 24 24"
               height="24"
@@ -46,10 +46,10 @@
                 fill="currentColor"
               ></path>
             </svg>
-            <div class="bubble-icon">1</div>
+            <div class="navbar__icon__bubble">1</div>
           </div>
           <!-- Group icon -->
-          <div class="icon">
+          <div class="navbar__icon">
             <svg
               viewBox="0 0 24 24"
               height="24"
@@ -68,7 +68,7 @@
             </svg>
           </div>
           <!-- States icon -->
-          <div class="icon">
+          <div class="navbar__icon">
             <svg
               viewBox="0 0 24 24"
               height="24"
@@ -99,7 +99,7 @@
             </svg>
           </div>
           <!-- Channels icon -->
-          <div class="icon">
+          <div class="navbar__icon">
             <svg
               viewBox="0 0 24 24"
               height="24"
@@ -127,9 +127,9 @@
               ></path>
             </svg>
           </div>
-          <hr class="sep-bar-navbar" />
+          <hr class="navbar__hr" />
           <!-- Saved chats icon -->
-          <div class="icon">
+          <div class="navbar__icon">
             <svg
               viewBox="0 0 20 20"
               height="22"
@@ -146,7 +146,7 @@
             </svg>
           </div>
           <!-- Favorites -->
-          <div class="icon">
+          <div class="navbar__icon">
             <svg
               viewBox="0 0 24 24"
               height="22"
@@ -165,9 +165,9 @@
             </svg>
           </div>
         </div>
-        <div class="user-panel">
+        <div class="navbar__useroptions">
           <!-- Configurations -->
-          <div class="icon">
+          <div class="navbar__icon">
             <svg
               viewBox="0 0 20 20"
               height="22"
@@ -186,23 +186,23 @@
             </svg>
           </div>
           <!-- User -->
-          <div class="icon">
+          <div class="navbar__icon">
             <img
               src="../img/avatar.jpeg"
               alt="user avatar"
-              class="user-avatar"
+              class="navbar__icon__useravatar"
             />
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="main-wrapper">
-        <section class="chat-sidebar">
-          <div class="chat-sidebar-header">
-            <h2 class="chat-sidebar-header-title">Chats</h2>
-            <div class="chat-sidebar-header-options">
-              <div class="chat-sidebar-header-options-icons">
+      <div class="main__wrapper">
+        <section class="sidebar">
+          <div class="sidebar__header">
+            <h2 class="sidebar__header__title">Chats</h2>
+            <div class="sidebar__header__options">
+              <div class="sidebar__header__options__icons">
                 <svg
                   viewBox="0 0 24 24"
                   height="24"
@@ -224,7 +224,7 @@
                   ></path>
                 </svg>
               </div>
-              <div class="chat-sidebar-header-options-icons">
+              <div class="sidebar__header__options__icons">
                 <svg
                   viewBox="0 0 24 24"
                   height="24"
@@ -245,9 +245,9 @@
               </div>
             </div>
           </div>
-          <div class="chat-sidebar-searchbar">
-            <div class="searchbar-wrapper">
-              <div class="search-button">
+          <div class="sidebar__search">
+            <div class="sidebar__searchbar__wrapper">
+              <div class="sidebar__searchbtn">
                 <svg
                   viewBox="0 0 24 24"
                   height="24"
@@ -266,13 +266,13 @@
                   ></path>
                 </svg>
               </div>
-              <div class="form-wrapper">
+              <div class="sidebar__form">
                 <form action="">
-                  <input class="searchbar" placeholder="Buscar" />
+                  <input class="sidebar__form__input" placeholder="Buscar" />
                 </form>
               </div>
             </div>
-            <div class="chat-sidebar-searchbar-filter-button">
+            <div class="sidebar__searchbar__filterbtn">
               <svg
                 viewBox="0 0 24 24"
                 height="20"
@@ -289,18 +289,18 @@
               </svg>
             </div>
           </div>
-          <div class="chat-sidebar-main">
+          <div class="sidebar__chatlist">
             <a href="chat-test.html">
-              <div class="chat-sidebar-main-card">
-                <div class="card-wrapper active">
-                  <div class="chat-avatar">
+              <div class="sidebar__chatlist__card">
+                <div class="card__wrapper">
+                  <div class="card__avatar">
                     <img src="../img/avatar1.png" alt="Juan Avatar" />
                   </div>
-                  <div class="chat-info">
-                    <div class="chat-info-wrapper">
-                      <h3 class="chat-username">Juan</h3>
-                      <span class="chat-shorttext">
-                        <div class="message-status-indicator">
+                  <div class="card__info">
+                    <div class="card__info__wrapper">
+                      <h3 class="card__info__username">Juan</h3>
+                      <span class="card__info__msg">
+                        <div class="card__info__msg__status">
                           <img
                             src="../img/blue-double-tick.png"
                             alt="read message"
@@ -309,15 +309,15 @@
                         <p>Hablamos cuando llegues</p>
                       </span>
                     </div>
-                    <div class="message-info-wrapper">
-                      <p class="chat-time">10:45</p>
-                      <div class="message-info">
+                    <div class="card__side">
+                      <p class="card__side__time">10:45</p>
+                      <div class="card__side__extra">
                         <svg
                           viewBox="0 0 19 20"
                           height="20"
                           width="19"
                           preserveAspectRatio="xMidYMid meet"
-                          class="chat-arrow"
+                          class="card__side__extra__icon"
                           version="1.1"
                           x="0px"
                           y="0px"
@@ -334,18 +334,16 @@
                 </div></div
             ></a>
             <a href="chat-test.html"
-              ><div
-                class="chat-sidebar-main-card chat-sidebar-incoming-message"
-              >
-                <div class="card-wrapper">
-                  <div class="chat-avatar">
+              ><div class="sidebar__chatlist__card sidebar__chatlist--newmsg">
+                <div class="card__wrapper">
+                  <div class="card__avatar">
                     <img src="../img/avatar2.png" alt="Maria Avatar" />
                   </div>
-                  <div class="chat-info">
-                    <div class="chat-info-wrapper">
-                      <h3 class="chat-username">Maria</h3>
-                      <span class="chat-shorttext">
-                        <div class="message-status-indicator">
+                  <div class="card__info">
+                    <div class="card__info__wrapper">
+                      <h3 class="card__info__username">Maria</h3>
+                      <span class="card__info__msg">
+                        <div class="card__info__msg__status">
                           <img
                             src="../img/blue-double-tick.png"
                             alt="read message"
@@ -354,16 +352,16 @@
                         <p>Hablamos cuando llegues</p>
                       </span>
                     </div>
-                    <div class="message-info-wrapper">
-                      <p class="chat-time">10:45</p>
-                      <div class="message-info">
-                        <div class="chat-sidebar-bubble-icon">1</div>
+                    <div class="card__side">
+                      <p class="card__side__time">10:45</p>
+                      <div class="card__side__extra">
+                        <div class="sidebar__newmsgicon">1</div>
                         <svg
                           viewBox="0 0 19 20"
                           height="20"
                           width="19"
                           preserveAspectRatio="xMidYMid meet"
-                          class="chat-arrow"
+                          class="card__side__extra__icon"
                           version="1.1"
                           x="0px"
                           y="0px"
@@ -380,16 +378,16 @@
                 </div></div
             ></a>
             <a href="chat-test.html"
-              ><div class="chat-sidebar-main-card">
-                <div class="card-wrapper">
-                  <div class="chat-avatar">
+              ><div class="sidebar__chatlist__card">
+                <div class="card__wrapper">
+                  <div class="card__avatar">
                     <img src="../img/avatar3.png" alt="Pedro Avatar" />
                   </div>
-                  <div class="chat-info">
-                    <div class="chat-info-wrapper">
-                      <h3 class="chat-username">Pedro</h3>
-                      <span class="chat-shorttext">
-                        <div class="message-status-indicator">
+                  <div class="card__info">
+                    <div class="card__info__wrapper">
+                      <h3 class="card__info__username">Pedro</h3>
+                      <span class="card__info__msg">
+                        <div class="card__info__msg__status">
                           <img
                             src="../img/blue-double-tick.png"
                             alt="read message"
@@ -398,15 +396,15 @@
                         <p>Hablamos cuando llegues</p>
                       </span>
                     </div>
-                    <div class="message-info-wrapper">
-                      <p class="chat-time">10:45</p>
-                      <div class="message-info">
+                    <div class="card__side">
+                      <p class="card__side__time">10:45</p>
+                      <div class="card__side__extra">
                         <svg
                           viewBox="0 0 19 20"
                           height="20"
                           width="19"
                           preserveAspectRatio="xMidYMid meet"
-                          class="chat-arrow"
+                          class="card__side__extra__icon"
                           version="1.1"
                           x="0px"
                           y="0px"
@@ -423,16 +421,16 @@
                 </div></div
             ></a>
             <a href="chat-test.html"
-              ><div class="chat-sidebar-main-card">
-                <div class="card-wrapper">
-                  <div class="chat-avatar">
+              ><div class="sidebar__chatlist__card">
+                <div class="card__wrapper">
+                  <div class="card__avatar">
                     <img src="../img/avatar4.png" alt="Mario Avatar" />
                   </div>
-                  <div class="chat-info">
-                    <div class="chat-info-wrapper">
-                      <h3 class="chat-username">Mario</h3>
-                      <span class="chat-shorttext">
-                        <div class="message-status-indicator">
+                  <div class="card__info">
+                    <div class="card__info__wrapper">
+                      <h3 class="card__info__username">Mario</h3>
+                      <span class="card__info__msg">
+                        <div class="card__info__msg__status">
                           <img
                             src="../img/blue-double-tick.png"
                             alt="read message"
@@ -441,15 +439,15 @@
                         <p>Hablamos cuando llegues</p>
                       </span>
                     </div>
-                    <div class="message-info-wrapper">
-                      <p class="chat-time">10:45</p>
-                      <div class="message-info">
+                    <div class="card__side">
+                      <p class="card__side__time">10:45</p>
+                      <div class="card__side__extra">
                         <svg
                           viewBox="0 0 19 20"
                           height="20"
                           width="19"
                           preserveAspectRatio="xMidYMid meet"
-                          class="chat-arrow"
+                          class="card__side__extra__icon"
                           version="1.1"
                           x="0px"
                           y="0px"
@@ -467,19 +465,19 @@
             ></a>
           </div>
         </section>
-        <section class="chat-box">
-          <div class="chat-box-header">
-            <div class="chat-box-user-avatar">
+        <section class="chatbox">
+          <div class="chatbox__header">
+            <div class="chatbox__header__useravatar">
               <img src="../img/avatar1.png" alt="user avatar" />
             </div>
-            <div class="chat-box-user-info">
+            <div class="chatbox__header__userinfo">
               <h2 class="username">Juan</h2>
-              <p class="last-connection">últ. vez hoy a la(s) 12:34</p>
+              <p class="last_connection">últ. vez hoy a la(s) 12:34</p>
             </div>
           </div>
-          <div class="chat-box-main-bg"></div>
-          <div class="chat-box-input-main-wrapper">
-            <div class="chat-box-input-moreoptions-icon">
+          <div class="chatbox__main--bg"></div>
+          <div class="chatbox__footer">
+            <div class="chatbox__footer__moreoptionsicon">
               <svg
                 viewBox="0 0 24 24"
                 height="24"
@@ -497,8 +495,8 @@
                 ></path>
               </svg>
             </div>
-            <div class="chat-box-input-wrapper">
-              <div class="chat-box-input-emojis-icon">
+            <div class="chatbox__footer__msg">
+              <div class="chatbox__footer__emojisicon">
                 <svg
                   viewBox="0 0 24 24"
                   height="24"
@@ -521,11 +519,11 @@
                 <input
                   type="text"
                   placeholder="Escribe un mensaje"
-                  class="chat-box-input"
+                  class="chatbox__footer__input"
                 />
               </form>
             </div>
-            <div class="chat-box-input-audio-icon">
+            <div class="chatbox__footer__audioicon">
               <svg
                 viewBox="0 0 24 24"
                 height="24"
@@ -544,7 +542,7 @@
                 ></path>
               </svg>
             </div>
-            <div class="chat-box-input-send-icon">
+            <div class="chatbox__footer__sendicon">
               <svg
                 viewBox="0 0 24 24"
                 height="24"
