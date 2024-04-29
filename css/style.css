@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Space+Grotesk:wght@300..700&display=swap");
-@import url("https://fonts.cdnfonts.com/css/segoe-ui-4");
-@import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular);
+@import url(https://db.onlinewebfonts.com/c/a936eebbc2f331a2b3868a9e32a31152?family=SF+Pro+Text);
+@import url(https://db.onlinewebfonts.com/c/28adc6c6fd652123c3e173389a8be17f?family=SF+Pro+Text+Bold);
 
 :root {
   --bg-color: #0c1317;
@@ -10,8 +9,8 @@
   --searchbar-color: #202c33;
   --button-bg-color: #00a884;
   --button-hover-bg-color: #06cf9c;
-  --notification-color: #63cb77;
-  --main-font-family: "Segoe UI", "Space Grotesk", sans-serif;
+  --notification-color: #00a884;
+  --main-font-family: "SF Pro Text", sans-serif;
   --white-color: rgb(255, 255, 255);
   --text-primary-color: rgba(233, 237, 239, 0.88);
   --text-secondary-color: #8696a0;
@@ -61,6 +60,7 @@ nav {
 }
 
 .icon {
+  position: relative;
   margin-top: 1rem;
   padding: 0.8rem;
   text-align: center;
@@ -72,6 +72,18 @@ nav {
   background-color: #374248;
   border-radius: 50%;
   text-align: center;
+}
+
+.bubble-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17px;
+  background-color: var(--notification-color);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 0.2rem 0;
 }
 
 .sep-bar-navbar {
@@ -248,7 +260,11 @@ nav {
   display: none;
 }
 
-.card-wrapper:hover > .chat-info > .message-info-wrapper > .chat-arrow {
+.card-wrapper:hover
+  > .chat-info
+  > .message-info-wrapper
+  > .message-info
+  > .chat-arrow {
   display: block;
 }
 
@@ -405,11 +421,16 @@ nav {
 
 .chat-box-input-emojis-icon {
   padding-right: 1rem;
+  cursor: pointer;
+  color: rgb(174, 186, 193);
 }
 
 .chat-box-input-moreoptions-icon,
-.chat-box-input-audio-icon {
+.chat-box-input-audio-icon,
+.chat-box-input-send-icon {
   margin: 0.8rem;
+  cursor: pointer;
+  color: rgb(174, 186, 193);
 }
 
 .chat-box-input:focus-visible {
@@ -423,4 +444,37 @@ nav {
   background-size: contain;
   background-repeat: repeat;
   opacity: 0.5;
+}
+
+.chat-sidebar-incoming-message .chat-info-wrapper,
+.chat-sidebar-incoming-message .chat-shorttext {
+  font-family: "SF Pro Text Bold";
+  color: #e9edef;
+}
+
+.chat-sidebar-incoming-message .message-info-wrapper .chat-time {
+  color: var(--notification-color);
+  font-family: "SF Pro Text Bold";
+}
+
+.message-info {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.chat-sidebar-bubble-icon {
+  width: 17px;
+  font-family: "SF Pro Text Bold";
+  background-color: var(--notification-color);
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  padding: 0.3rem 0;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+nav,
+.chat-sidebar {
+  border-right: 1px solid #2f3b43;
 }
