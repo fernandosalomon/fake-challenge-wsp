@@ -392,7 +392,6 @@ nav {
 
 .chatbox__footer {
   width: 100%;
-  height: 51px;
   justify-content: space-around;
   background-color: var(--navbar-color);
   gap: 2rem;
@@ -482,7 +481,7 @@ nav,
   flex-direction: column;
   justify-content: end;
   row-gap: 2px;
-  height: 465px;
+  overflow: hidden;
 }
 
 .chatbox__msglog {
