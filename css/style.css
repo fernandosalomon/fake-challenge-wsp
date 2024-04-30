@@ -1,6 +1,3 @@
-@import url(https://db.onlinewebfonts.com/c/a936eebbc2f331a2b3868a9e32a31152?family=SF+Pro+Text);
-@import url(https://db.onlinewebfonts.com/c/28adc6c6fd652123c3e173389a8be17f?family=SF+Pro+Text+Bold);
-
 :root {
   --bg-color: #0c1317;
   --main-color: #222e35;
@@ -10,7 +7,7 @@
   --button-bg-color: #00a884;
   --button-hover-bg-color: #06cf9c;
   --notification-color: #00a884;
-  --main-font-family: "SF Pro Text", sans-serif;
+  --main-font-family: "Segoe UI", sans-serif;
   --white-color: rgb(255, 255, 255);
   --text-primary-color: rgba(233, 237, 239, 0.88);
   --text-secondary-color: #8696a0;
@@ -105,7 +102,6 @@ nav {
   max-width: 45%;
   background-color: var(--side-panel);
   height: 95vh;
-  font-family: "SF Pro Text Regular", sans-serif;
   font-stretch: 100%;
 }
 
@@ -356,8 +352,6 @@ nav {
   width: 100%;
 }
 
-/* ------------------- */
-
 .chatbox__header__useravatar {
   width: 4.5%;
   padding-right: 1.9rem;
@@ -384,7 +378,6 @@ nav {
   background-image: url(../img/chat-bg.jpg);
   background-size: contain;
   background-repeat: repeat;
-  opacity: 0.5;
 }
 
 .chatbox__footer,
@@ -439,14 +432,15 @@ nav {
 }
 
 .sidebar__chatlist--newmsg .card__info__wrapper,
-.sidebar__chatlist--newmsg .card__info__msg {
-  font-family: "SF Pro Text Bold";
+.sidebar__chatlist--newmsg .card__info__msg,
+.sidebar__chatlist--newmsg .card__info__username {
+  font-weight: 700;
   color: #e9edef;
 }
 
 .sidebar__chatlist--newmsg .card__side .card__side__time {
   color: var(--notification-color);
-  font-family: "SF Pro Text Bold";
+  font-weight: 700;
 }
 
 .card__side__extra {
@@ -458,7 +452,7 @@ nav {
 
 .sidebar__newmsgicon {
   width: 17px;
-  font-family: "SF Pro Text Bold";
+  font-weight: 700;
   background-color: var(--notification-color);
   color: rgb(0, 0, 0);
   border-radius: 25px;
@@ -470,4 +464,101 @@ nav {
 nav,
 .sidebar {
   border-right: 1px solid #2f3b43;
+}
+
+.chatbox__main {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  row-gap: 2px;
+}
+
+.chatbox__msglog {
+  font-size: 1.25rem;
+  display: grid;
+}
+
+.chatbox__msglog__msgbox {
+  margin: 1.5rem 0;
+  padding: 1rem 0.8rem;
+  max-width: 50%;
+  position: relative;
+}
+
+.chatbox__msglog__msgbox--date {
+  text-align: center;
+  justify-self: center;
+}
+
+.msglog_date {
+  padding: 1rem;
+  border-radius: 1.4rem;
+  color: rgb(134, 150, 160);
+  background-color: rgb(24, 34, 41);
+  text-align: center;
+}
+
+.chatbox__msglog__msgbox--self {
+  border-radius: 14px 0 14px 14px;
+  background-color: rgb(0, 92, 75);
+  justify-self: right;
+}
+
+.chatbox__msglog__msgbox--self .msg__timestatus img {
+  display: none;
+}
+
+.chatbox__msglog__msgbox--other {
+  border-radius: 0 14px 14px 14px;
+  background-color: rgb(32, 44, 51);
+  text-align: left;
+  justify-self: left;
+}
+
+.msg p {
+  font-size: 1.4rem;
+  color: white;
+  line-height: 1.9rem;
+}
+
+.msg__timestatus {
+  display: flex;
+  padding-top: 5px;
+  align-items: end;
+}
+
+.msg__timestatus p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.msg__timestatus img {
+  width: 18px;
+  height: 16px;
+}
+
+.msg {
+  display: flex;
+  gap: 5px;
+}
+
+.blank_space {
+  display: block;
+  width: 10px;
+  height: 1.4rem;
+}
+
+.tail-out {
+  position: absolute;
+  right: -7px;
+  top: 0;
+  color: rgb(0, 92, 75);
+}
+
+.tail-in {
+  position: absolute;
+  left: -7px;
+  top: 0;
+  color: rgb(32, 44, 51);
 }
