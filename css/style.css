@@ -46,7 +46,7 @@ header {
 }
 
 nav {
-  height: 100%;
+  height: 95vh;
   width: 60px;
   padding: 0 1.2rem;
   display: flex;
@@ -392,6 +392,7 @@ nav {
 
 .chatbox__footer {
   width: 100%;
+  height: 51px;
   justify-content: space-around;
   background-color: var(--navbar-color);
   gap: 2rem;
@@ -476,17 +477,23 @@ nav,
 }
 
 .chatbox__main {
-  padding: 1rem 2rem;
+  padding: 1rem .5rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
   row-gap: 2px;
+  height: 465px;
 }
 
 .chatbox__msglog {
-  margin: 0 3rem;
   font-size: 1.25rem;
+  
+  overflow-x: hidden;
+}
+
+.chatbox__msg__wrapper{
   display: grid;
+  padding: 0 3rem;
 }
 
 .chatbox__msglog__msgbox {
@@ -579,4 +586,29 @@ nav,
 
 .card__info__msg__status--notick {
   display: none;
+}
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 7px; /* Ancho de la barra de desplazamiento */
+  
+}
+
+/* Estilos para el riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: transparent; /* Color de fondo del riel */
+  border-radius: 7px;
+  
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: rgba(62, 63, 63, 0.7); /* Color del pulgar */
+  border-radius: 7px;
+
+}
+
+/* Estilos cuando el usuario pasa el ratón sobre el pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del pulgar al pasar el ratón */
 }
