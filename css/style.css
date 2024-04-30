@@ -220,20 +220,19 @@ nav {
   font-size: 1.3rem;
   font-weight: 400;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   color: rgb(134, 150, 160);
   gap: 5px;
 }
 
 .card__info__msg__status {
-  width: 9%;
   margin-top: 0.5rem;
-  display: flex;
-  align-items: baseline;
 }
 
-.card__info__msg__status img {
-  width: 100%;
+.card__info__msg p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card__side__time {
@@ -447,6 +446,11 @@ nav {
   font-weight: 700;
 }
 
+.card__wrapper img {
+  min-width: 44px;
+  min-height: 44px;
+}
+
 .card__side__extra {
   display: flex;
   flex-direction: row;
@@ -569,4 +573,8 @@ nav,
 
 .double__tick--unread {
   color: #7eada4;
+}
+
+.card__info__msg__status--notick {
+  display: none;
 }
