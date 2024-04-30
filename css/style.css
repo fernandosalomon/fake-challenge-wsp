@@ -222,11 +222,14 @@ nav {
   display: flex;
   align-items: center;
   color: rgb(134, 150, 160);
+  gap: 5px;
 }
 
 .card__info__msg__status {
   width: 9%;
   margin-top: 0.5rem;
+  display: flex;
+  align-items: baseline;
 }
 
 .card__info__msg__status img {
@@ -506,7 +509,7 @@ nav,
   justify-self: right;
 }
 
-.chatbox__msglog__msgbox--self .msg__timestatus img {
+.chatbox__msglog__msgbox--other .msg__timestatus .double__tick {
   display: none;
 }
 
@@ -527,16 +530,12 @@ nav,
   display: flex;
   padding-top: 5px;
   align-items: end;
+  gap: 2px;
 }
 
 .msg__timestatus p {
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.msg__timestatus img {
-  width: 18px;
-  height: 16px;
 }
 
 .msg {
@@ -562,4 +561,12 @@ nav,
   left: -7px;
   top: 0;
   color: rgb(32, 44, 51);
+}
+
+.double__tick--read {
+  color: #51a9d1;
+}
+
+.double__tick--unread {
+  color: #7eada4;
 }
