@@ -356,7 +356,8 @@ nav {
 }
 
 .chatbox__header__useravatar {
-  width: 4.5%;
+  width: 5.5%;
+  min-width: 60px;
   padding-right: 1.9rem;
 }
 
