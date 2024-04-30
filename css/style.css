@@ -36,7 +36,7 @@ body {
   display: grid;
   grid-template-columns: 60px auto;
   height: 95vh;
-  width: 95vw;
+  width: 90vw;
   margin: auto;
   margin-top: 1.8rem;
 }
@@ -356,7 +356,8 @@ nav {
 }
 
 .chatbox__header__useravatar {
-  width: 4.5%;
+  width: 5.5%;
+  min-width: 60px;
   padding-right: 1.9rem;
 }
 
@@ -483,6 +484,7 @@ nav,
 }
 
 .chatbox__msglog {
+  margin: 0 3rem;
   font-size: 1.25rem;
   display: grid;
 }
